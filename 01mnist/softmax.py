@@ -8,7 +8,6 @@ x = tf.placeholder(tf.float32, [None, 784])
 y_ = tf.placeholder(tf.float32, [None, 10])
 # 变量
 W = tf.Variable(tf.zeros([784, 10]))
-tf.Variable()
 b = tf.Variable(tf.zeros([10]))
 # 计算
 y = tf.nn.softmax(tf.matmul(x, W)+b)
